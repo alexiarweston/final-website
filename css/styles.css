@@ -1,7 +1,3 @@
-section {
-    margin: 0 !important;
-    padding: 0 !important;
-}
 /* TYPE SELECTOR */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -14,18 +10,20 @@ body {
 h1 {
     text-shadow: #ebebeb 2px 2px 4px;
     font-family: 'orientalcats';
-    font-size: 800%;
+    font-size: 600%;
 }
 
 h2 {
     font-family: 'kiddosy';
-    font-size: 300%;
+    font-size: 250%;
 }
 
 p {
     font-size: 1em;
     line-height: 1.5;
 }
+
+/*Cat Supply List with Pawprint Bullet Points*/
 
 ul {
     line-height: 1.5;
@@ -67,7 +65,7 @@ a {
 figcaption {
     display: block;
     font-size: 0.9em;
-    color: #555;
+    color: #2c2c2c;
     text-align: center;
     padding-top: .25em;
 }
@@ -152,7 +150,7 @@ figcaption {
     display: block;
 }
 
-/* ID SELECTOR */
+/* ID SELECTORS */
 
 #mainheader {
     background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
@@ -172,7 +170,7 @@ figcaption {
 
 #tnrcontainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 35px;
     align-items: center;
     justify-items: center;
@@ -203,11 +201,15 @@ figcaption {
     color: #333;
 }
 
+/*Cat Illustration Text for Page Breaks*/
+
 .cat-line {
     font-family: 'meowscript';
     font-size: 3em;
     color: #0d3d32;
 }
+
+/* YOUTUBE VIDEOS */
 
 .tutorialvideo {
     display: flex;
@@ -219,6 +221,8 @@ figcaption {
     min-height: 315px;
     margin: auto;
 }
+
+/* MAIN PAGE IMAGES */
 
 .mainpageimages {
     display: flex;
@@ -292,6 +296,7 @@ h3 {
         min-height: 220px;
     }
 }
+
 /* MEDIA QUERY FOR PORTRAIT ORIENTATION/PHONE USE */
 @media (orientation: portrait) {
     body {
@@ -320,7 +325,7 @@ h3 {
     }
 }
 
-/* FONT FACE */
+/* FONTS */
 @font-face {
     font-family: 'kiddosy';
     src: url('fonts/kiddosy-regular-font/KiddosyfreeRegular-GOEag.otf') format('truetype');
