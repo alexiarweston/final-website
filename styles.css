@@ -1,7 +1,7 @@
 /* TYPE SELECTORS */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(15, 67, 52);
+    color: #0f4334;
     text-align: center;
     background-color: rgb(250, 235, 195);
     margin: 0;
@@ -15,6 +15,7 @@ h1 {
 
 h2 {
     font-family: 'kiddosy';
+    text-shadow: #242424 2px 2px 4px;
     font-size: 150%;
 }
 
@@ -107,7 +108,8 @@ li::before {
     align-self: center;
 }
 
-.navigation a:hover, .subnavbtn:hover .subnavbtn {
+.navigation a:hover,
+.subnavbtn:hover .subnavbtn {
     background-color: #f0f8ff;
     color: #0e644f;
     text-shadow: #a3a2a2 2px 2px 4px;
@@ -166,7 +168,8 @@ li::before {
     justify-items: center;
     padding: 20px;
     margin: 0;
-    padding-right: 40px; /* Add space on the right side */
+    padding-right: 40px;
+    /* Add space on the right side */
     background-color: #ffffff;
     border: 2px solid #0e644f;
     overflow-wrap: break-word;
@@ -185,12 +188,56 @@ li::before {
     border: 2px solid #0e644f;
 }
 
+#tnrcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    margin: auto;
+    background-color: #ffffff;
+    border: 2px solid #0e644f;
+}
+
+#galleryheader {
+    font-family: 'kiddosy';
+    font-size: 200%;
+    color: #0d3d32;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
 /* CLASS SELECTOR */
 .header {
     background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
     padding: 10px;
     border-bottom: 2px solid #7f7e7e;
 }
+
+
+div.scroll-container {
+  background-color:  #0f4334;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  max-height: 400px; /* Set a max height for the scrollable area */
+}
+
+div.scroll-container img {
+  padding: 10px;
+  max-height: 300px; /* Set a max height for the images */
+}
+
+div.scroll-container figcaption {
+    font-size: 0.8em;
+    text-shadow: #242424;
+    color: #ffffff;
+    text-align: center;
+}
+
+
 
 .footer {
     background-color: #12512578;
@@ -234,7 +281,7 @@ li::before {
     height: 100%;
     min-width: 300px;
     border-radius: 8px;
-    border: 2px solid #0e644f;  
+    border: 2px solid #0e644f;
     margin: auto;
 }
 
@@ -245,7 +292,7 @@ li::before {
     height: 100%;
     min-width: 300px;
     border-radius: 8px;
-    border: 2px solid #0e644f;  
+    border: 2px solid #0e644f;
     margin: auto;
 }
 
@@ -258,7 +305,7 @@ li::before {
     height: 100%;
     min-width: 300px;
     border-radius: 8px;
-    border: 2px solid #0e644f;  
+    border: 2px solid #0e644f;
     margin: auto;
 }
 
@@ -291,12 +338,15 @@ h3 {
     body {
         align-items: center;
     }
+
     #container {
         grid-template-columns: 1fr;
     }
+
     #abcontainer {
         grid-template-columns: 1fr 1fr;
     }
+
     .tutorialvideo {
         min-height: 100%;
     }
@@ -336,6 +386,10 @@ h3 {
         grid-template-columns: 1fr;
     }
 
+    #tnrcontainer {
+        grid-template-columns: 1fr;
+    }
+
     .tutorialvideo {
         min-height: 100%;
     }
@@ -356,6 +410,10 @@ h3 {
     }
 
     #container {
+        grid-template-columns: 1fr;
+    }
+
+    #abcontainer {
         grid-template-columns: 1fr;
     }
 
