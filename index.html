@@ -7,26 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="A cat encyclopedia for all things cat, everything from kitten stages, basic care information, to TNR." />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Claws &amp; Effect Cat Encyclopedia</title>
     <link rel="icon" href="images/catfootprint.png" type="image/x-icon">
 </head>
 
 <body>
-    <header id="mainheader">
-        <h1 class="first-text">Claws &amp; Effect</h1>
-        <h2 class="first-text">A Cat Encyclopedia to Care, Rescue and Rehabilitation</h2>
-        <p>
-            <q>The love from a cat is seen as an unparalleled gift one may receive.</q> ~Charles Dickens
-        </p>
-        <!-- the width and height attributes are set to 100% for responsive design, adjust as needed. -->
-    </header>
-    <section>
+        <section>
         <nav class="navigation">
             <div class="nav-links">
-                <a href="basic-care.html" class="subnavtn">Basic Cat Care</a>
-                <a href="kitten-stages.html" class="subnavtn">Kitten Stages</a>
-                <a href="tnr.html" class="subnavtn">TNR (Trap-Neuter-Return)</a>
+                <a href="pages/basic-care.html" class="subnavtn">Basic Cat Care</a>
+                <a href="pages/kitten-stages.html" class="subnavtn">Kitten Stages</a>
+                <a href="pages/tnr.html" class="subnavtn">TNR (Trap-Neuter-Return)</a>
                 <div class="subnavtn">
                     <a href="#">Resources<i class="fa fa-caret-down"></i></a>
                     <div class="subnav-content">
@@ -37,6 +29,15 @@
             </div>
         </nav>
     </section>
+    <header id="mainheader">
+        <h1 class="first-text">Claws &amp; Effect</h1>
+        <h2 class="first-text">A Cat Encyclopedia to Care, Rescue and Rehabilitation</h2>
+        <p>
+            <q>The love from a cat is seen as an unparalleled gift one may receive.</q> ~Charles Dickens
+        </p>
+        <!-- the width and height attributes are set to 100% for responsive design, adjust as needed. -->
+    </header>
+
     <main id="container">
         <div>
         <h2>Your paws make an impact</h2>
@@ -60,13 +61,13 @@
         </div>
         <div>
             <figure>
-            <img class="mainpageimages" src="images/blackcat.jpg" alt="black cat in a adoption kennel">
+            <img id="leftmainpageimg" src="images/blackcat.jpg" alt="black cat in a adoption kennel">
             <figcaption>A black cat waiting for adoption at a local shelter, A. Weston 2023.</figcaption>
             </figure>
         </div>
         <div>
             <figure>
-            <img class="mainpageimages" src="images/blueeyes.jpg" alt="cute kitten with blues eyes in a carrier">
+            <img id="rightmainpageimg" src="images/blueeyes.jpg" alt="cute kitten with blues eyes in a carrier">
             <figcaption>A cute kitten with blue eyes in a carrier, ready for foster care, A. Weston 2024.</figcaption>
             </figure>
         </div>

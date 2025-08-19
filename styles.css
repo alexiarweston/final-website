@@ -1,4 +1,4 @@
-/* TYPE SELECTOR */
+/* TYPE SELECTORS */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(15, 67, 52);
@@ -15,22 +15,40 @@ h1 {
 
 h2 {
     font-family: 'kiddosy';
-    font-size: 250%;
+    font-size: 150%;
 }
 
 p {
-    font-size: 1em;
+    font-size: 80%;
     line-height: 1.5;
+}
+
+q {
+    color: #107566;
+    font-style: italic;
+}
+
+a {
+    color: #0e644f;
+    text-decoration: none;
+}
+
+figcaption {
+    display: block;
+    font-size: 0.6em;
+    color: #2c2c2c;
+    text-align: center;
+    padding-top: .25em;
 }
 
 /*Cat Supply List with Pawprint Bullet Points*/
 
 ul {
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 li {
-    font-size: 1.2em;
+    font-size: .9em;
     margin: 5px 0;
     position: relative;
 }
@@ -48,26 +66,8 @@ li::before {
     background-image: url('images/catfootprint.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 15px;
+    margin-right: 10px;
     vertical-align: middle;
-}
-
-q {
-    color: #107566;
-    font-style: italic;
-}
-
-a {
-    color: #0e644f;
-    text-decoration: none;
-}
-
-figcaption {
-    display: block;
-    font-size: 0.9em;
-    color: #2c2c2c;
-    text-align: center;
-    padding-top: .25em;
 }
 
 /* NAVIGATION BAR */
@@ -84,7 +84,7 @@ figcaption {
     text-shadow: #242424 2px 2px 4px;
     text-decoration: none;
     border: none;
-    font-size: 200%;
+    font-size: 110%;
     margin: 15px;
     transition: all 0.3s ease;
 }
@@ -154,6 +154,8 @@ figcaption {
 
 #mainheader {
     background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 #container {
@@ -163,9 +165,12 @@ figcaption {
     align-items: center;
     justify-items: center;
     padding: 20px;
-    margin: auto;
+    margin: 0;
+    padding-right: 40px; /* Add space on the right side */
     background-color: #ffffff;
     border: 2px solid #0e644f;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 #tnrcontainer {
@@ -184,7 +189,6 @@ figcaption {
 .header {
     background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
     padding: 10px;
-    border-radius: 8px;
     border-bottom: 2px solid #7f7e7e;
 }
 
@@ -205,8 +209,9 @@ figcaption {
 
 .cat-line {
     font-family: 'meowscript';
-    font-size: 3em;
+    font-size: 2.5em;
     color: #0d3d32;
+    margin: 0;
 }
 
 /* YOUTUBE VIDEOS */
@@ -215,19 +220,41 @@ figcaption {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 100%;
-    height: auto;
-    max-width: 560px;
-    min-height: 315px;
+    width: auto;
+    height: 100%;
     margin: auto;
 }
 
 /* MAIN PAGE IMAGES */
 
+#leftmainpageimg {
+    display: flex;
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    min-width: 300px;
+    border-radius: 8px;
+    border: 2px solid #0e644f;  
+    margin: auto;
+}
+
+#rightmainpageimg {
+    display: flex;
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    min-width: 300px;
+    border-radius: 8px;
+    border: 2px solid #0e644f;  
+    margin-right: 25px;
+}
+
+/* BASIC CARE PAGE IMAGES */
+
 .mainpageimages {
     display: flex;
     align-self: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
     min-width: 300px;
     border-radius: 8px;
@@ -244,7 +271,7 @@ main>p {
 
 .header>p {
     text-align: center;
-    font-size: 1.2em;
+    font-size: .8em;
     color: #0d3d32;
     max-width: 800px;
     margin: 10px auto;
@@ -266,6 +293,9 @@ h3 {
     }
     #container {
         grid-template-columns: 1fr;
+    }
+    .tutorialvideo {
+        min-height: 100%;
     }
 
 }
@@ -292,8 +322,7 @@ h3 {
     }
 
     .tutorialvideo {
-        max-width: 100%;
-        min-height: 220px;
+        min-height: 100%;
     }
 }
 
@@ -320,8 +349,7 @@ h3 {
     }
 
     .tutorialvideo {
-        max-width: 100%;
-        min-height: 220px;
+        min-height: 100%;
     }
 }
 

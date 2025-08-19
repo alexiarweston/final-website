@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Information on enrichment that may go above and beyond basic care for cats, including advanced training, diy enrichment, even catios and catwalks.">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Above &amp; Beyond</title>    
+    <link rel="icon" href="../images/catfootprint.png" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <nav class="navigation">
+            <div class="nav-links">
+                <a href="../index.html" class="subnavtn">Home Page</a>
+                <a href="basic-care.html" class="subnavtn">Basic Cat Care</a>
+                <a href="kitten-stages.html" class="subnavtn">Kitten Stages</a>
+                <div class="subnavtn">
+                    <a href="#">Resources<i class="fa fa-caret-down"></i></a>
+                    <div class="subnav-content">
+                        <a href="https://www.aspca.org/pet-care/cat-care" target="_blank">ASPCA Cat Care</a>
+                        <a href="https://www.kittenlady.org/" target="_blank">Foster Care with the Kitten Lady</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <header class="header">
+            <h1>Above &amp; Beyond Cat Care</h1>
+            <p>
+                There are many ways to go above and beyond basic cat care. This guide explores harness training techniques,
+                DIY enrichment ideas, and the benefits of creating a catio and/or catwalk for your feline.
+            </p>
+        </header>
+    </section>
+    <div id="container">
+        <div>
+            <h2>Harness Training</h2>
+            <p>
+                Training your cat to walk on a leash can provide them with safe outdoor exploration. Start by getting your
+                cat used to wearing a harness indoors, then gradually introduce the leash. Always supervise your cat while
+                they are outside to ensure their safety. They'll become your little adventure buddy, and you'll both enjoy the fresh air and exercise.
+            </p>
+            <iframe class="tutorialvideo" src="https://www.youtube.com/embed/3dkctdfaAfk?si=qXxuwkZCgFLTLyXG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h2>DIY Enrichment</h2>
+            <p>
+                If you're a crafty person, you can create your own cat toys and enrichment activities. Simple items like cardboard boxes, paper bags, and feather wands can provide hours of entertainment. You can also make puzzle feeders to stimulate your cat's mind and encourage natural hunting behaviors. 
+            </p>
+            <iframe class="tutorialvideo" src="https://www.youtube.com/embed/-YG9hbMxQ98?si=fZ-WOESP_fvXG07b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h2>Catios</h2>
+            <p>
+                A catio is an enclosed outdoor space that allows your cat to enjoy the outdoors safely. It can be as simple as a window box or as elaborate as a full backyard enclosure. Catios provide a safe environment for your cat to explore, play, and relax while protecting them from predators and traffic.
+            </p>
+            <iframe class="tutorialvideo" src="https://www.youtube.com/embed/Pfjr3Sv8teU?si=81esXozTJa7-LyoD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+            <h2>Catwalks</h2>
+            <p>
+                Catwalks are elevated platforms that allow your cat to explore vertical spaces in your home. They can be installed along walls or in corners, providing your cat with a unique perspective and exercise opportunities. Catwalks can also help reduce stress by giving your cat a place to retreat to when they need some alone time.
+            </p>
+            <iframe class="tutorialvideo" src="https://www.youtube.com/embed/FvdToc1iqUw?si=zxYUhQ4I3PM7wRKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <p><a href="#top">Return to top</a></p>
+    <footer class="footer">
+        <p>
+            &copy; Alex Weston 2025<br>
+            For more information, contact <a href="mailto:alexia.r.weston@gmail.com">Alex Weston</a>
+        </p>
+    </footer>
+</body>
+
+</html>
