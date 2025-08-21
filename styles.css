@@ -28,7 +28,8 @@ h3 {
     font-size: 150%;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-shadow: #12512578 2px 2px 4px;
     font-family: 'orientalcats';
 }
@@ -136,6 +137,7 @@ figcaption {
 }
 
 /* NAVIGATION BAR */
+
 .navigation {
     background-color: #12512578;
     text-align: center;
