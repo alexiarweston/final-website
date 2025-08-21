@@ -1,4 +1,11 @@
 /* TYPE SELECTORS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #0f4334;
@@ -8,20 +15,28 @@ body {
 }
 
 h1 {
-    text-shadow: #ebebeb 2px 2px 4px;
-    font-family: 'orientalcats';
     font-size: 600%;
 }
 
 h2 {
+    font-size: 300%;
+}
+
+h1, h2 {
+    text-shadow: #12512578 2px 2px 4px;
+    font-family: 'orientalcats';
+}
+
+h3 {
     font-family: 'kiddosy';
-    text-shadow: #242424 2px 2px 4px;
+    text-shadow: #12512578 2px 2px 4px;
     font-size: 150%;
 }
 
 p {
     font-size: 80%;
     line-height: 1.5;
+    padding: 10px;
 }
 
 q {
@@ -108,43 +123,59 @@ li::before {
     align-self: center;
 }
 
+.navigationcurrentpage {
+    background-color: #f0f8ff6f;
+    color: #0e644f;
+    text-shadow: #a3a2a2 2px 2px 4px;
+    border: none;
+    border-radius: 8px;
+    margin: -5px;
+    font-size: 1em;
+    padding: 0px;
+}
+
 .navigation a:hover,
 .subnavbtn:hover .subnavbtn {
     background-color: #f0f8ff;
     color: #0e644f;
     text-shadow: #a3a2a2 2px 2px 4px;
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 8px;
 }
 
 .subnav-content {
+    background-color: #f0f8ff8e;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 40px;
     display: none;
     position: absolute;
     left: 0;
     z-index: 1;
     top: 100%;
-    flex-direction: column;
-    text-align: left;
+    /* flex-direction: column; */
+    text-align: center;
 }
 
 .subnav-content a {
     background-color: transparent;
     color: #0e644f;
-    padding: 8px 12px;
     text-decoration: none;
     display: block;
     width: 120%;
     border-radius: 8px;
     border: none;
-    font-size: 0.95em;
+    font-size: 0.8em;
+    padding: 1px 10px;
+    margin-left: -6px;
 }
 
 .subnav-content a:hover {
     background-color: #12512578;
     color: #f0f8ff;
-    border-radius: 0;
-    text-align: left;
+    border-radius: 8px;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -216,13 +247,40 @@ li::before {
     border-bottom: 2px solid #7f7e7e;
 }
 
+.footer {
+    background-color: #12512578;
+    padding: 10px;
+    border-radius: 8px;
+    border-top: 2px solid #7f7e7e;
+    margin-top: 20px;
+}
+
+/* SCROLLING GALLERY CONTAINER */
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 div.scroll-container {
   background-color:  #0f4334;
-  overflow: auto;
+  overflow: hidden; /* Changed to hidden to prevent scrollbars */
   white-space: nowrap;
   padding: 10px;
   max-height: 400px; /* Set a max height for the scrollable area */
+}
+
+.scroll-container:hover .gallery-slide {
+    animation-play-state: paused; /* Pause the animation when you hover */
+}
+
+.gallery-slide {
+    animation: scroll 20s linear infinite; /* Continuous scrolling effect */
+    display: inline-block;
 }
 
 div.scroll-container img {
@@ -235,21 +293,6 @@ div.scroll-container figcaption {
     text-shadow: #242424;
     color: #ffffff;
     text-align: center;
-}
-
-
-
-.footer {
-    background-color: #12512578;
-    padding: 10px;
-    border-radius: 8px;
-    border-top: 2px solid #7f7e7e;
-    margin-top: 20px;
-}
-
-.first-text {
-    font-weight: bold;
-    color: #333;
 }
 
 /*Cat Illustration Text for Page Breaks*/
@@ -274,18 +317,7 @@ div.scroll-container figcaption {
 
 /* MAIN PAGE IMAGES */
 
-#leftmainpageimg {
-    display: flex;
-    align-self: center;
-    width: 90%;
-    height: 100%;
-    min-width: 300px;
-    border-radius: 8px;
-    border: 2px solid #0e644f;
-    margin: auto;
-}
-
-#rightmainpageimg {
+.mainpageimg {
     display: flex;
     align-self: center;
     width: 90%;
@@ -298,7 +330,7 @@ div.scroll-container figcaption {
 
 /* BASIC CARE PAGE IMAGES */
 
-.mainpageimages {
+.basic-careimages {
     display: flex;
     align-self: center;
     width: 90%;
@@ -328,7 +360,6 @@ main>p {
 h1,
 h2,
 h3 {
-    font-weight: bold;
     color: #0d3d32;
     margin: 5px;
 }
@@ -363,6 +394,10 @@ h3 {
     #abcontainer {
         grid-template-columns: 1fr;
     }
+
+    .subnavtn:hover .subnav-content, .resources-link, .subnav-content {
+         display: none !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -378,16 +413,96 @@ h3 {
         padding: 10px;
     }
 
-    #container {
+    #container, #abcontainer, #tnrcontainer {
         grid-template-columns: 1fr;
     }
 
-    #abcontainer {
-        grid-template-columns: 1fr;
+    .tutorialvideo {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cat-line {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        align-items: center;
     }
 
-    #tnrcontainer {
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        width: 100%;
         grid-template-columns: 1fr;
+        padding: 10px;
+        font-size: smaller;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .tutorialvideo {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    body {
+        align-items: center;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .tutorialvideo {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    body {
+        align-items: center;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
 
     .tutorialvideo {
@@ -409,20 +524,8 @@ h3 {
         justify-content: space-around;
     }
 
-    #container {
+    #container, #abcontainer, #tnrcontainer {
         grid-template-columns: 1fr;
-    }
-
-    #abcontainer {
-        grid-template-columns: 1fr;
-    }
-
-    #tnrcontainer {
-        grid-template-columns: 1fr;
-    }
-
-    .tutorialvideo {
-        min-height: 100%;
     }
 }
 
