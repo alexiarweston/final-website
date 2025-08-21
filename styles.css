@@ -22,15 +22,22 @@ h2 {
     font-size: 300%;
 }
 
+h3 {
+    font-family: 'kiddosy';
+    text-shadow: #12512578 2px 2px 4px;
+    font-size: 150%;
+}
+
 h1, h2 {
     text-shadow: #12512578 2px 2px 4px;
     font-family: 'orientalcats';
 }
 
+h1,
+h2,
 h3 {
-    font-family: 'kiddosy';
-    text-shadow: #12512578 2px 2px 4px;
-    font-size: 150%;
+    color: #0d3d32;
+    margin: 5px;
 }
 
 p {
@@ -57,33 +64,92 @@ figcaption {
     padding-top: .25em;
 }
 
-/*Cat Supply List with Pawprint Bullet Points*/
+/* ID SELECTORS */
 
-ul {
-    line-height: 1.2;
+#mainheader {
+    background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
+    margin-top: 0;
+    padding-top: 10px;
 }
 
-li {
-    font-size: .9em;
-    margin: 5px 0;
-    position: relative;
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 35px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    margin: 0;
+    padding-right: 40px;
+    /* Add space on the right side */
+    background-color: #ffffff;
+    border: 2px solid #0e644f;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
-li::marker {
-    content: "";
-    display: none;
+/* CLASS SELECTOR */
+.header {
+    background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
+    padding: 10px;
+    border-bottom: 2px solid #7f7e7e;
 }
 
-li::before {
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-image: url('images/catfootprint.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    vertical-align: middle;
+.footer {
+    background-color: #12512578;
+    padding: 10px;
+    border-radius: 8px;
+    border-top: 2px solid #7f7e7e;
+    margin-top: 20px;
+}
+
+
+/*Cat Illustration Text for Page Breaks*/
+
+.cat-line {
+    font-family: 'meowscript';
+    font-size: 2.5em;
+    color: #0d3d32;
+    margin: 0;
+}
+
+/* YOUTUBE VIDEOS */
+
+.tutorialvideo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+
+/* MAIN PAGE IMAGES */
+
+.mainpageimg {
+    display: flex;
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    min-width: 300px;
+    border-radius: 8px;
+    border: 2px solid #0e644f;
+    margin: auto;
+}
+
+/* RELATIONAL SELECTORS */
+.main>p {
+    text-align: center;
+    border: thickoutset #0e644f;
+    padding: 10px;
+}
+
+.header>p {
+    text-align: center;
+    font-size: .8em;
+    color: #0d3d32;
+    max-width: 800px;
+    margin: 10px auto;
 }
 
 /* NAVIGATION BAR */
@@ -183,78 +249,6 @@ li::before {
     display: block;
 }
 
-/* ID SELECTORS */
-
-#mainheader {
-    background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
-    margin-top: 0;
-    padding-top: 10px;
-}
-
-#container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 35px;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-    margin: 0;
-    padding-right: 40px;
-    /* Add space on the right side */
-    background-color: #ffffff;
-    border: 2px solid #0e644f;
-    overflow-wrap: break-word;
-    word-break: break-word;
-}
-
-#abcontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-    margin: auto;
-    background-color: #ffffff;
-    border: 2px solid #0e644f;
-}
-
-#tnrcontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 35px;
-    align-items: center;
-    justify-items: center;
-    padding: 20px;
-    margin: auto;
-    background-color: #ffffff;
-    border: 2px solid #0e644f;
-}
-
-#galleryheader {
-    font-family: 'kiddosy';
-    font-size: 200%;
-    color: #0d3d32;
-    margin-top: 20px;
-    margin-left: 20px;
-    text-align: left;
-}
-
-/* CLASS SELECTOR */
-.header {
-    background-image: linear-gradient(to bottom, #12512578, rgb(250, 235, 195, 0.527));
-    padding: 10px;
-    border-bottom: 2px solid #7f7e7e;
-}
-
-.footer {
-    background-color: #12512578;
-    padding: 10px;
-    border-radius: 8px;
-    border-top: 2px solid #7f7e7e;
-    margin-top: 20px;
-}
-
 /* SCROLLING GALLERY CONTAINER */
 
 @keyframes scroll {
@@ -264,6 +258,15 @@ li::before {
     to {
         transform: translateX(-100%);
     }
+}
+
+#galleryheader {
+    font-family: 'kiddosy';
+    font-size: 200%;
+    color: #0d3d32;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
 }
 
 div.scroll-container {
@@ -293,260 +296,4 @@ div.scroll-container figcaption {
     text-shadow: #242424;
     color: #ffffff;
     text-align: center;
-}
-
-/*Cat Illustration Text for Page Breaks*/
-
-.cat-line {
-    font-family: 'meowscript';
-    font-size: 2.5em;
-    color: #0d3d32;
-    margin: 0;
-}
-
-/* YOUTUBE VIDEOS */
-
-.tutorialvideo {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: auto;
-    height: 100%;
-    margin: auto;
-}
-
-/* MAIN PAGE IMAGES */
-
-.mainpageimg {
-    display: flex;
-    align-self: center;
-    width: 90%;
-    height: 100%;
-    min-width: 300px;
-    border-radius: 8px;
-    border: 2px solid #0e644f;
-    margin: auto;
-}
-
-/* BASIC CARE PAGE IMAGES */
-
-.basic-careimages {
-    display: flex;
-    align-self: center;
-    width: 90%;
-    height: 100%;
-    min-width: 300px;
-    border-radius: 8px;
-    border: 2px solid #0e644f;
-    margin: auto;
-}
-
-/* RELATIONAL SELECTOR */
-main>p {
-    text-align: center;
-    border: thickoutset #0e644f;
-    padding: 10px;
-}
-
-.header>p {
-    text-align: center;
-    font-size: .8em;
-    color: #0d3d32;
-    max-width: 800px;
-    margin: 10px auto;
-}
-
-/* COMBINATION SELECTOR */
-h1,
-h2,
-h3 {
-    color: #0d3d32;
-    margin: 5px;
-}
-
-/* MEDIA QUERY */
-@media screen and (max-width: 1045px) {
-    body {
-        align-items: center;
-    }
-
-    #container {
-        grid-template-columns: 1fr;
-    }
-
-    #abcontainer {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .tutorialvideo {
-        min-height: 100%;
-    }
-
-}
-
-@media screen and (max-width: 800px) {
-    #abcontainer {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 675px) {
-    #abcontainer {
-        grid-template-columns: 1fr;
-    }
-
-    .subnavtn:hover .subnav-content, .resources-link, .subnav-content {
-         display: none !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        align-items: center;
-    }
-
-    #navigation ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        list-style-type: none;
-        padding: 10px;
-    }
-
-    #container, #abcontainer, #tnrcontainer {
-        grid-template-columns: 1fr;
-    }
-
-    .tutorialvideo {
-        min-height: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .cat-line {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    body {
-        align-items: center;
-    }
-
-    #navigation ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        list-style-type: none;
-        padding: 10px;
-    }
-
-    #container, #abcontainer, #tnrcontainer {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 10px;
-        font-size: smaller;
-        box-sizing: border-box;
-        word-break: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .tutorialvideo {
-        min-height: 100%;
-    }
-}
-
-@media screen and (max-width: 401px) {
-    body {
-        align-items: center;
-    }
-
-    #navigation ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        list-style-type: none;
-        padding: 10px;
-    }
-
-    #container, #abcontainer, #tnrcontainer {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 10px;
-        box-sizing: border-box;
-        word-break: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .tutorialvideo {
-        min-height: 100%;
-    }
-}
-
-@media screen and (max-width: 396px) {
-    body {
-        align-items: center;
-    }
-
-    #navigation ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        list-style-type: none;
-        padding: 10px;
-    }
-
-    #container, #abcontainer, #tnrcontainer {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 10px;
-        box-sizing: border-box;
-        word-break: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .tutorialvideo {
-        min-height: 100%;
-    }
-}
-
-/* MEDIA QUERY FOR PORTRAIT ORIENTATION/PHONE USE */
-@media (orientation: portrait) {
-    body {
-        align-items: center;
-    }
-
-    #navigation ul {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        padding: 10px;
-        justify-content: space-around;
-    }
-
-    #container, #abcontainer, #tnrcontainer {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* FONTS */
-@font-face {
-    font-family: 'kiddosy';
-    src: url('fonts/kiddosy-regular-font/KiddosyfreeRegular-GOEag.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'meowscript';
-    src: url('fonts/meows-nepil-illustration-font/MeowsNepilIllustratioRegular-owjVq.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'orientalcats';
-    src: url('fonts/oriental-cats-font/OrientalCatsLight-2OzB8.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }

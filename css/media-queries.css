@@ -1,0 +1,165 @@
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1045px) {
+    body {
+        align-items: center;
+    }
+
+    #container {
+        grid-template-columns: 1fr;
+    }
+
+    #abcontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tutorialvideo {
+        min-height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #abcontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #abcontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .subnavtn:hover .subnav-content, .resources-link, .subnav-content {
+         display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        align-items: center;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        grid-template-columns: 1fr;
+    }
+
+    .tutorialvideo {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cat-line {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        align-items: center;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        font-size: smaller;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .tutorialvideo {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    body {
+        align-items: center;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .tutorialvideo {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    body {
+        align-items: center;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+        box-sizing: border-box;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .tutorialvideo {
+        min-height: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR PORTRAIT ORIENTATION/PHONE USE */
+@media (orientation: portrait) {
+    body {
+        align-items: center;
+    }
+
+    #navigation ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    #container, #abcontainer, #tnrcontainer {
+        grid-template-columns: 1fr;
+    }
+}

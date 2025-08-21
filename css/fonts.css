@@ -1,0 +1,21 @@
+/* FONTS */
+@font-face {
+    font-family: 'kiddosy';
+    src: url('../fonts/kiddosy-regular-font/KiddosyfreeRegular-GOEag.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'meowscript';
+    src: url('../fonts/meows-nepil-illustration-font/MeowsNepilIllustratioRegular-owjVq.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'orientalcats';
+    src: url('../fonts/oriental-cats-font/OrientalCatsLight-2OzB8.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,43 @@
+/* BASIC CARE PAGE IMAGES */
+
+.basic-careimages {
+    display: flex;
+    align-self: center;
+    width: 90%;
+    height: 100%;
+    min-width: 300px;
+    border-radius: 8px;
+    border: 2px solid #0e644f;
+    margin: auto;
+}
+
+/*Cat Supply List with Pawprint Bullet Points*/
+
+ul {
+    line-height: 1.2;
+}
+
+li {
+    font-size: .9em;
+    margin: 5px 0;
+    position: relative;
+}
+
+li::marker {
+    content: "";
+    display: none;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url('images/catfootprint.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
