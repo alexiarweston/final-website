@@ -5,20 +5,20 @@ A website for cat rescue with guides using best practices. Used HTML and CSS for
 ---
 ## peer feedback
 
-> reorganize css files
-> fixed! css have their own folder, also created files for each page and split the css down so it is easier to find things.
+- **reorganize css files**
+  - fixed! css have their own folder, also created files for each page and split the css down so it is easier to find things.
 
-> drop-down section of nav
-> removed this from mobile view as a hover effect wouldn't make sense and there is less room. also added a transparent background so hopefully it is easier to read the options. I know that external links isn't typical in  navbar is not typical, but I wanted to showcase the type of coding to create a two tier navbar and I don't have enough pages to do it within my own site. hopefully it makes sense!
+- **drop-down section of nav**
+  - removed this from mobile view as a hover effect wouldn't make sense and there is less room. also added a transparent background so hopefully it is easier to read the options. I know that external links isn't typical in  navbar is not typical, but I wanted to showcase the type of coding to create a two tier navbar and I don't have enough pages to do it within my own site. hopefully it makes sense!
 
-> not working at < 400px
-> added more media queries for this fix.
+- **not working at < 400px**
+  - added more media queries for this fix.
 
-> readability issues with some of the headers
-> fixed! make a lighter shadow so the font is less blurry.
+- **readability issues with some of the headers**
+  - fixed! make a lighter shadow so the font is less blurry.
 
->navbar highlighting what page youre on
->changed the navbar so the page you are on is still on the bar but it is highlighted for clarity.
+- **navbar highlighting what page youre on**
+  - changed the navbar so the page you are on is still on the bar but it is highlighted for clarity.
 
 ---
 
@@ -45,9 +45,8 @@ A website for cat rescue with guides using best practices. Used HTML and CSS for
 
 ## peer feedback
 
-> It was noted that I should move the navigation bar to be above the banner at the top of the website. 
-
-> I did make this adjustment and moved the navigation bar to be at the top of the page for the secondary pages. I kept it in the same spot on the main page to distinguish it from the other pages, as it should be unique. It was also noted that the navigation was hard to read with the background image. As cute as it was, I removed it and did a lot of tinkering to create a navbar that is aesthetically pleasing as well as operable. 
+- **It was noted that I should move the navigation bar to be above the banner at the top of the website.** 
+  - I did make this adjustment and moved the navigation bar to be at the top of the page for the secondary pages. I kept it in the same spot on the main page to distinguish it from the other pages, as it should be unique. It was also noted that the navigation was hard to read with the background image. As cute as it was, I removed it and did a lot of tinkering to create a navbar that is aesthetically pleasing as well as operable. 
 
 ---
 
@@ -75,6 +74,3 @@ A website for cat rescue with guides using best practices. Used HTML and CSS for
 
 - **tnr page**
   - changed to a 3-column grid so that it was different from the other pages
-
----
-# final-website
