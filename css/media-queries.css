@@ -94,6 +94,10 @@
     .tutorialvideo {
         min-height: 100%;
     }
+
+    #gallerycaption {
+        font-size: .6em;
+    }
 }
 
 @media screen and (max-width: 401px) {

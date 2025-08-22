@@ -46,6 +46,29 @@ div.scroll-container {
     padding: 10px;
     max-height: 400px;
     /* Set a max height for the scrollable area */
+    position:relative;
+}
+
+/* Creates gradient on edges of carousel gallery */
+
+.scroll-container::before,
+.scroll-container::after {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+}
+
+.scroll-container::before {
+    left: 0;
+    background: linear-gradient(to left, #0f433400, #0f4334);
+}
+
+.scroll-container::after {
+    right: 0;
+    background: linear-gradient(to right, #0f433400, #0f4334);
 }
 
 .scroll-container:hover .gallery-slide {
@@ -54,7 +77,7 @@ div.scroll-container {
 }
 
 .gallery-slide {
-    animation: scroll 20s linear infinite;
+    animation: scroll 35s linear infinite;
     /* Continuous scrolling effect */
     display: inline-block;
 }
