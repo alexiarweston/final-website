@@ -41,6 +41,9 @@ A website for cat rescue with guides using best practices. Used HTML and CSS for
   - changed footer so it is not a box but a gradient like at the top of the page.
   - "return to top" added to footer so it is more balanced between the main content and the footer content
 
+---
+---
+
 ## PREVIOUS CHANGES
 
 ## peer feedback
